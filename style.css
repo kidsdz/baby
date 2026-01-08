@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+:root{
+  --black:#0b0b0b;
+  --gold:#d4af37;
+  --gray:#1a1a1a;
+}
+
+*{box-sizing:border-box}
+
+body{
+  font-family:'Cairo',Tahoma;
+  background:radial-gradient(circle at top,#1a1a1a,#000);
+  color:#fff;
+  padding:30px;
+}
+
+.product-card{
+  max-width:380px;
+  margin:auto;
+  background:linear-gradient(180deg,#121212,#000);
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.8);
+}
+
+.product-images{
+  height:240px;
+  position:relative;
+  overflow:hidden;
+  border-radius:14px;
+}
+
+.product-images img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:.8s;
+}
+
+.product-images img.active{opacity:1}
+
+h3{text-align:center;font-weight:700}
+.price{text-align:center;color:var(--gold);font-size:22px;font-weight:700}
+.subtitle{text-align:center;color:#aaa;font-size:14px}
+
+.buy-btn,.send-btn{
+  width:100%;
+  padding:12px;
+  border-radius:12px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.buy-btn{
+  background:#000;
+  color:var(--gold);
+  border:1px solid var(--gold);
+}
+
+.buy-btn:hover{
+  background:var(--gold);
+  color:#000;
+}
+
+.send-btn{
+  background:linear-gradient(135deg,var(--gold),#b8962e);
+  color:#000;
+}
+
+.order-form{
+  display:none;
+  margin-top:15px;
+  animation:fadeUp .5s ease;
+}
+
+input,select{
+  width:100%;
+  padding:10px;
+  margin-bottom:8px;
+  border-radius:10px;
+  border:1px solid #333;
+  background:#0f0f0f;
+  color:#fff;
+}
+
+.msg{text-align:center;font-weight:600}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(15px)}
+  to{opacity:1;transform:translateY(0)}
+}

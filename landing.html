@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kids DZ | Baby Shop</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','PIXEL_ID_HERE');
+fbq('track','PageView');
+</script>
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>Kids DZ</h1>
+  <h3>Baby Shop</h3>
+  <p>&#1575;&#1591;&#1604;&#1576; &#1575;&#1604;&#1570;&#1606; – &#1575;&#1604;&#1583;&#1601;&#1593; &#1593;&#1606;&#1583; &#1575;&#1604;&#1575;&#1587;&#1578;&#1604;&#1575;&#1605;</p>
+</section>
+
+<section class="products">
+  <div class="product">
+    <img src="https://i.postimg.cc/NF92x3Yx/30b07ad19be64867458379a15e35d7aa.jpg">
+    <h3>&#1591;&#1602;&#1605; &#1576;&#1606;&#1575;&#1578;&#1610; 3-5</h3>
+    <p class="price">3200 &#1583;&#1580;</p>
+    <button onclick="showOptions(1)">&#1575;&#1591;&#1604;&#1576; &#1575;&#1604;&#1570;&#1606;</button>
+
+    <div class="options" id="opt1">
+      <select id="size1">
+        <option value="">&#1575;&#1582;&#1578;&#1585; &#1575;&#1604;&#1605;&#1602;&#1575;&#1587;</option>
+        <option>S</option><option>M</option><option>L</option>
+      </select>
+      <select id="color1">
+        <option value="">&#1575;&#1582;&#1578;&#1585; &#1575;&#1604;&#1604;&#1608;&#1606;</option>
+        <option>&#1571;&#1581;&#1605;&#1585;</option>
+        <option>&#1571;&#1586;&#1585;&#1602;</option>
+        <option>&#1571;&#1587;&#1608;&#1583;</option>
+      </select>
+      <input id="name1" placeholder="&#1575;&#1604;&#1575;&#1587;&#1605; &#1575;&#1604;&#1603;&#1575;&#1605;&#1604;">
+      <input id="phone1" placeholder="&#1585;&#1602;&#1605; &#1575;&#1604;&#1607;&#1575;&#1578;&#1601;">
+      <button onclick="orderLanding(1,event)">&#1578;&#1571;&#1603;&#1610;&#1583; &#1575;&#1604;&#1591;&#1604;&#1576;</button>
+    </div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
